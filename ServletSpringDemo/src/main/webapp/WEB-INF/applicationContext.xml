@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        				http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+        				
+ 	<bean id="colorPreferences" class="com.demo.ColorPreferences" scope="session">
+ 		<property name="foreground" value="black" />
+ 		<property name="background" value="#fdf5e6" />
+ 	</bean>       				
+        
+    <bean id="lookupService" class="com.demo.LookupServiceImpl">
+    	<property name="customers">
+    		<map>
+    			<entry key="a123">
+    				<bean class="com.demo.Customer">
+    					<property name="customerId" value="a123" />
+    					<property name="firstName" value="tom" />
+    					<property name="lastName" value="larsen" />
+    					<property name="balance" value="123.45" />
+    				</bean>
+    			</entry>
+    		</map>
+    	</property>
+    </bean>				
+</beans>
+        				
