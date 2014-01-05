@@ -19,5 +19,7 @@
 		<li>Last name: ${customer.lastName }</li>
 		<li>Balance: ${customer.formattedBalance }</li>
 	</ul>
+	<br>
+	<%@ include file="/WEB-INF/views/date.jsp" %>
 </body>
 </html>
