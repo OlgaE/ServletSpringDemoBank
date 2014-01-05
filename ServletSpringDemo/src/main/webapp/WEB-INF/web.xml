@@ -26,6 +26,19 @@
     <url-pattern>/get-customer</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>init-jsp</servlet-name>
+    <jsp-file>/defaultuser.jsp</jsp-file>
+    <init-param>
+    	<param-name>defaultUser</param-name>
+    	<param-value>Name Lastname</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>init-jsp</servlet-name>
+  	<url-pattern>/defaultuser.jsp</url-pattern>
+  </servlet-mapping>
+  
   <listener>
   	<listener-class>
   		org.springframework.web.context.ContextLoaderListener
