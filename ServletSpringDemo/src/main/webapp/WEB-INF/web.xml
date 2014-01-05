@@ -25,6 +25,15 @@
     <servlet-name>servlet-service</servlet-name>
     <url-pattern>/get-customer</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servlet-date</servlet-name>
+    <servlet-class>com.demo.DateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet-date</servlet-name>
+    <url-pattern>/get-date</url-pattern>
+  </servlet-mapping>
   
   <servlet>
     <servlet-name>init-jsp</servlet-name>
